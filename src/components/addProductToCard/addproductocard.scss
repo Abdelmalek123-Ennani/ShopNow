@@ -1,0 +1,39 @@
+.btn-discover {
+    background-color: #db0f10;
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'viga' , sans-serif;
+    color: #FFF;
+    width: fit-content;
+}
+
+.qnity_control {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 19px;
+
+    button {
+        border: solid 1px #db0f10;
+        border-radius: 50%;
+        height: 30px;
+        width: 30px;
+        color: #db0f10;
+        background-color: #FFF;
+        padding: 0px;
+        line-height: 30px;
+        font-weight: bold;
+    }
+}
+
+.details {
+
+    @media (max-width: 766px) {
+        padding: 0px 48px;
+
+        .btn-discover  {
+            width: 100%;
+        }
+    }
+
+}

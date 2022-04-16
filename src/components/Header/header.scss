@@ -1,0 +1,114 @@
+$bg-color : #FFF;
+$color : #333;
+
+header {
+    background-color: $bg-color;
+    color: $color;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    
+    .bag-number-shoping {
+        top: 52%;
+        left: 50%;
+        color: #FFF;
+        font-size: 10px;
+        transform: translate(-50%, -20%);
+    }
+
+    .bag-svg-icon {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 21px;
+    }
+
+    ul {
+        font-weight: 100;
+        list-style-type: none;
+        &:first-of-type {
+            display: flex;
+            justify-content: space-between;
+
+            ul {
+                display: flex;
+                gap: 60px;
+            }
+        }
+
+
+        .btn-open-close {
+            display: none;
+        }
+
+        @media (max-width : 800px) {
+    
+            &:first-of-type {
+               
+                ul {
+                    background: $bg-color;
+                    color: $color;
+                    height: 100vh;
+                    position: absolute;
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    gap: 30px;
+                    transition: all .8s ease-in-out;
+
+                
+                }
+
+                .hide-header {
+                    top: -750px;
+                    left: -600px;
+                }
+
+                .show-header {
+                    top: 0;
+                    left: 0;
+                }
+
+            
+            }        
+
+        }       
+    }
+
+    .btn-open-close {
+        display: block;
+        z-index: 100;
+        position: absolute;
+        top: 12px;
+        right: 15px;
+        display: none;
+
+        @media (max-width: 800px) {
+            & {
+                display: block;
+            }
+        }
+    }
+
+
+    a.header-link {
+        color : $color;
+        text-decoration: none;
+        padding: 5px 0px;
+        transition: all .1s ease-in-out;
+
+        &:hover {
+            color: rgb(70, 68, 68);
+            border-bottom: solid 3px red;
+        }
+
+        &.borderBottom {
+            border-bottom: solid 3px red;
+        }
+    }
+
+
+}

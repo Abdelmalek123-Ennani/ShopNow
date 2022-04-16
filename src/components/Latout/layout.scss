@@ -1,0 +1,48 @@
+$bg-color : #FFF;
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Viga&display=swap');
+
+.layout {
+    height: calc(100vh - 72px);
+    background-color: $bg-color;
+
+    h1 {
+        font-family: 'Akaya Telivigala', cursive;
+        font-weight: 800;
+        font-size: 50px;
+    }
+
+    p {
+        color: #333;
+    }
+
+    .slogan {
+        display: flex;
+       flex-direction: column;
+       justify-content: space-evenly;
+       align-items: flex-start;
+    }
+
+    .btn-discover {
+        background-color: #db0f10;
+        font-size: 1rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-family: 'viga' , sans-serif;
+        color: #FFF;
+    }
+
+    .images {
+        position: relative;
+        width: 60%;
+        img {
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+    }
+
+    a {
+        color: #FFF;
+        text-decoration: none;
+        outline: none;
+    }
+}

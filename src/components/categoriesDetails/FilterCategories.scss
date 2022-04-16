@@ -1,0 +1,45 @@
+
+
+
+select {
+    padding: 6px;
+    outline: none;
+    border: solid 1px #CCC;
+    color: #333;
+
+    option {
+        padding: 5px;
+    }
+}
+
+.h-85 {
+    height: 85%;
+}
+
+h3 {
+    @media (max-width: 760px){
+        padding-left: 20px;
+    }
+}
+
+
+.product-item {
+    min-height: 362px;
+
+    @media (max-width: 760px) {
+        min-height: 300px;
+        width: 90%;
+        margin: auto;
+
+        .product-details {
+            padding-left: 15px !important;
+        }
+    }
+}
+
+.dropList {
+    @media (max-width: 760px) {
+        width: 90%;
+        margin: auto;
+    }
+}

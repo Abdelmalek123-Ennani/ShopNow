@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Viga&display=swap');
+
+$background-color : #333;
+$color : #FFF;
+
+.footer-dark {
+    ul {
+        a.footer-link {
+           color: #333;
+           padding: 0;
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+
+        .item {
+            .text {
+                margin-bottom:36px;
+            }
+        }
+    }
+
+    h3 {
+        font-family: 'Akaya Telivigala', cursive;
+    }
+}
+

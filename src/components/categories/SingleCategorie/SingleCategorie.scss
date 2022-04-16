@@ -1,0 +1,77 @@
+
+
+.btn-like {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    z-index: 10;
+}
+
+.btn-discover {
+    background-color: #db0f10;
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'viga' , sans-serif;
+    color: #FFF;
+    width: fit-content;
+    margin: 35px auto;
+}
+
+.product {
+    cursor: pointer;
+    transition: filter .4s ease-in;
+
+    .decription {
+        position: absolute;
+        font-size: 14px;
+        bottom: -70px;
+        opacity: 0;
+        transition: all .4s ease-in-out;
+    }
+
+    .price {
+        position: absolute;
+        left: 7px;
+        top: 7px;
+    }
+
+    &:hover {
+        .decription {
+            bottom: -18px;
+            opacity: 1;
+        }
+
+        img {
+            filter: blur(4px);
+        }
+    
+    }
+
+    @media (max-width : 760px) {
+        .decription {
+            position: absolute;
+            font-size: 14px;
+            bottom: 0px;
+            opacity: 1;
+            transition: all .4s ease-in-out;
+        }
+    }
+
+}
+
+a:not(.product-link) {
+    color: #FFF;
+    text-decoration: none;
+    outline: none;
+
+    &:hover {
+        color: #FFF;
+        text-decoration: none;
+     }
+}
+
+a.product-link {
+    color: #333;
+    text-decoration: none;
+    outline: none;
+}
