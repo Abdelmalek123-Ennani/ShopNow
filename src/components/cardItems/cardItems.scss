@@ -1,0 +1,140 @@
+
+
+.w-20 {
+    width: 40%;
+}
+
+.qnity_control {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 19px;
+
+    button {
+        border: solid 1px #db0f10;
+        border-radius: 50%;
+        height: 30px;
+        width: 30px;
+        color: #db0f10;
+        background-color: #FFF;
+        padding: 0px;
+        line-height: 30px;
+        font-weight: bold;
+    }
+}
+
+
+.details {
+
+    h6 {
+        font-weight: bold;
+    }
+
+    @media (max-width : 770px) {
+        h5 {
+            font-size: 17px;
+        }
+        p small {
+            font-size: 12px;
+        }
+    }
+
+}
+
+
+// for card empty
+
+.empty-card {
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+// check form
+.checkout-form-shop {
+
+    .card {
+        background: #FFF;
+        color: #000;
+        width: 410px !important
+    }
+    
+    .mrow {
+        margin-top: 30px;
+        margin-bottom: 30px
+    }
+    
+    img {
+        margin-right: 10px;
+        transition: all .4s ease-in-out;
+    }
+    
+    .main span:hover {
+        text-decoration: underline;
+        cursor: pointer
+    }
+    
+    .mrow img:hover {
+        border-bottom: 1px solid #333;
+        cursor: pointer
+    }
+    
+    .btn-primary {
+        border: none;
+        border-radius: 30px
+    }
+    
+    h5 {
+        padding-top: 8px
+    }
+    
+    .form-group {
+        position: relative;
+        margin-bottom: 2rem;
+        border-bottom: solid 1px #333;
+    }
+    
+    .form-control-placeholder {
+        position: absolute;
+        top: 6px;
+        padding: 7px 0 0 10px;
+        transition: all 200ms;
+        opacity: 0.5;
+        color: #333 !important;
+        font-size: 75%
+    }
+    
+    .form-control:focus+.form-control-placeholder,
+    .form-control:valid+.form-control-placeholder {
+        font-size: 75%;
+        transform: translate3d(0, -100%, 0);
+        opacity: 1;
+        top: 10px
+    }
+    
+    .form-control {
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid #fff !important;
+        border-radius: 0;
+        outline: 0
+    }
+    
+    .form-control:focus,
+    .form-control:after {
+        outline-width: 0;
+        border-bottom: 1px solid #fff !important;
+        background: transparent;
+        box-shadow: none;
+        border-radius: 0;
+        color: #dae0e5;
+        letter-spacing: 1px
+    }
+
+    button {
+        background-color:#dc3545;
+        color: #FFF;
+    }
+}

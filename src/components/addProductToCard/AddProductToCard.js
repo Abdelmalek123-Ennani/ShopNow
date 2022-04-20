@@ -6,18 +6,17 @@ import { useParams } from "react-router-dom"
 import { useDispatch, useSelector } from "react-redux";
 import { getSingleProduct } from "../../store/catogoryData";
 import { Fade } from "react-reveal";
+import { actions } from "../../store/cardItems"; 
 
 const AddProductToCard = () => {
 
     
      const dispatch = useDispatch();
      const [product] = useSelector(state => state.categoriesData.categoryProducts);
+     const cardItems = useSelector(state => state.cardItems.cardItems);
      const { id } = useParams()
 
      const [quanity , setQuanity] = useState(1);
-     const [price , setPrice] = useState(product.price);
-  
-     console.log(product)
 
      useEffect(() => {
          dispatch(getSingleProduct(id));
@@ -27,6 +26,8 @@ const AddProductToCard = () => {
             behavior: 'smooth',
           });
      } , [])
+
+     console.log('cardItems' , cardItems)
 
 
     return (
@@ -75,6 +76,15 @@ const AddProductToCard = () => {
                         ) : (
                             <button 
                               className='btn btn-discover py-2'
+                              onClick={() => dispatch(actions.addToCard({ 
+                                  id :  product.id,
+                                  title : product.title,
+                                  count : product.count,
+                                  price : product.price,
+                                  quanity,
+                                  image : product.image,
+                                  description : product.description
+                               }))}
                             >Add to card!</button>
                         )}
                   

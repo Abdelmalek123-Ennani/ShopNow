@@ -41,7 +41,7 @@ const Layout = () => {
                <div className="col-12 col-md-6 h-100 d-flex justify-content-center align-items-center">
                      <div className='h-75 images'>
                         { layoutImages.map((el , idx)  => (
-                            <Fade duration={3000} delay={3000 * idx} forever={true}>
+                            <Fade duration={3000} delay={3000 * idx} forever={true} key={ idx }>
                                <img src={el} className="w-100 h-100" alt="image" />
                             </Fade>
                         ))}

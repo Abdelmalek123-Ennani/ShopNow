@@ -1,5 +1,5 @@
 import './App.scss';
-import { Home , Header, Footer , AddProductToCard, FilterCategories, Contact} from './components'
+import { Home , Header, Footer , AddProductToCard, FilterCategories, Contact , CardItems} from './components'
 import { BrowserRouter as Router , Route , Routes } from 'react-router-dom'
 
 function App() {
@@ -12,6 +12,7 @@ function App() {
             <Route path="/products/categories" element={ <FilterCategories /> } />
             <Route path='/product/:id/Card' element={<AddProductToCard /> } />
             <Route path='/contact' element={ <Contact /> } />
+            <Route path='/card/products' element={ <CardItems /> } />
          </Routes>
          <Footer />
        </Router>

@@ -22,7 +22,7 @@ const SingleCategorie = ({ category }) => {
           <div className='row'>
                 {
                     categoryData.map((el , idx) => (
-                        <Zoom delay={idx * 200}>
+                        <Zoom delay={idx * 200} key={el.id}>
                             <div className='col-12 col-md-3 p-5 border product mx-md-4 my-2 my-md-0 position-relative'>
                                 <Link className='product-link' to={`/product/${el.id}/Card`}>
                                       <img src={el.image} className="w-100 h-100" alt="image" />

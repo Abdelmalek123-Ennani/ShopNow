@@ -3,10 +3,12 @@ import "./header.scss"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faClose , faBars , faBagShopping } from '@fortawesome/free-solid-svg-icons'
 import { NavLink } from "react-router-dom"
+import { useSelector } from "react-redux"
 
 const Header = () => {
 
-    const [classShowHideHeader , setClassShowHideHeader] = useState('hide-header')
+    const [classShowHideHeader , setClassShowHideHeader] = useState('hide-header');
+    const cardItemsNumber = useSelector(state => state.cardItems.cardItems.length);
 
     const opencloseNav = () => {
         if ( classShowHideHeader == "hide-header" ) {
@@ -45,8 +47,15 @@ const Header = () => {
                     </li>
                     <li>Login</li>
                     <li className="position-relative">
-                        <FontAwesomeIcon icon={faBagShopping} className="bag-svg-icon" />
-                        <span className="position-absolute bag-number-shoping">0</span>
+                       <NavLink
+                           to="/card/products"
+                           className={({ isActive }) =>
+                           isActive ? "borderBottom header-link" : "header-link"
+                       }
+                        >
+                            <FontAwesomeIcon icon={faBagShopping} className="bag-svg-icon" />
+                            <span className="position-absolute bag-number-shoping">{cardItemsNumber}</span>
+                       </NavLink>
                     </li>
                 </ul>
             </ul>
@@ -58,7 +67,7 @@ const Header = () => {
                </button>
            </div>
         </header>
-    )
+    ) 
 }
 
 
