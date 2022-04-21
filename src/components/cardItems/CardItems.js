@@ -30,6 +30,14 @@ const CardItems = () => {
         dispatch(getItemsFromLocalStorage());
     } , [])
 
+    useEffect(() => {
+        window.scroll({
+            top: 0,
+            left: 0,
+            behavior: 'smooth',
+          });
+    } , [])
+
   return cardItems.length == 0 ? (
       <EmptyCard />
   ) : (

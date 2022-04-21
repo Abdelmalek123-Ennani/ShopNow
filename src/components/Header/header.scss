@@ -93,6 +93,19 @@ header {
         }
     }
 
+    .cart-link {
+        display: none;
+
+        @media (max-width: 800px) {
+            display: block;
+            margin: auto;
+            position: absolute;
+            left: 56%;
+            top: 50%;
+            transform: translate(-39%, -100%);
+        }
+    }
+
 
     a.header-link {
         color : $color;
@@ -107,6 +120,13 @@ header {
 
         &.borderBottom {
             border-bottom: solid 3px red;
+        }
+    }
+
+
+    @media (max-width: 800px) {
+        .cart-item-hide {
+            display: none;
         }
     }
 

@@ -35,6 +35,7 @@ const Header = () => {
                             className={({ isActive }) =>
                                   isActive ? "borderBottom header-link" : "header-link"
                               }
+                              onClick={() => setClassShowHideHeader('hide-header')}
                         >Categories</NavLink>   
                     </li>
                     <li>
@@ -43,14 +44,23 @@ const Header = () => {
                             className={({ isActive }) =>
                                   isActive ? "borderBottom header-link" : "header-link"
                               }
+                              onClick={() => setClassShowHideHeader('hide-header')}
                         >contact</NavLink>  
                     </li>
-                    <li>Login</li>
+                    <li>
+                    <NavLink 
+                            to="/login"
+                            className={({ isActive }) =>
+                                  isActive ? "borderBottom header-link" : "header-link"
+                              }
+                            onClick={() => setClassShowHideHeader('hide-header')}
+                        >login</NavLink>  
+                    </li>
                     <li className="position-relative">
                        <NavLink
                            to="/card/products"
                            className={({ isActive }) =>
-                           isActive ? "borderBottom header-link" : "header-link"
+                           isActive ? "borderBottom header-link cart-item-hide" : "header-link cart-item-hide"
                        }
                         >
                             <FontAwesomeIcon icon={faBagShopping} className="bag-svg-icon" />
@@ -59,12 +69,19 @@ const Header = () => {
                     </li>
                 </ul>
             </ul>
-                <button 
+            <NavLink
+                        to="/card/products"
+                        className="header-link cart-link"
+                    >
+                        <FontAwesomeIcon icon={faBagShopping} className="bag-svg-icon" />
+                        <span className="position-absolute bag-number-shoping">{cardItemsNumber}</span>
+            </NavLink>
+            <button 
                 className="btn btn-open-close" 
                 onClick={opencloseNav}
-                >
+            >
                 {classShowHideHeader == "show-header" ? <FontAwesomeIcon  icon={faClose} /> : <FontAwesomeIcon icon={faBars} />} 
-               </button>
+            </button>
            </div>
         </header>
     ) 

@@ -1,0 +1,138 @@
+
+
+.wrap {
+
+
+    .img ,
+    .login-wrap {
+        width: 50%;
+    }
+
+    @media (max-width: 770px) {
+        .img ,
+        .login-wrap {
+         width: 100%;
+        }
+
+        .img {
+            min-height: 300px;
+        }
+
+    }
+
+    .img {
+        background: url(./../../images/login-image.png) no-repeat center center; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    .login-wrap {
+        position: relative;
+    }
+
+    .social-media {
+        position: relative;
+        width: 100%;
+
+       .social-icon {
+            display: block;
+            width: 40px;
+            height: 40px;
+            background: transparent;
+            border: 1px solid rgba(0,0,0,.05);
+            font-size: 16px;
+            margin-right: 5px;
+            border-radius: 50%;
+            transition: all .4s ease-in-out;
+
+            & {
+                color: gray;
+            }
+
+            &.facebook:hover {
+                border: 1px solid #1877f2;
+                color: #1877f2;
+            }
+
+            &.twitter:hover {
+                border: 1px solid #1da1f2;
+                color: #1da1f2;
+            }
+
+            &.instagram:hover {
+                border: 1px solid #e1306c;
+                color: #e1306c;
+            }
+       }
+    }
+
+    .form-group{
+        position: relative;
+
+        .label {
+             font-size: 12px !important;
+             text-transform: uppercase;
+             letter-spacing: 1px;
+             color: #000;
+             font-weight: 700;
+        }
+
+        .form-control {
+             height: 48px !important;
+             background: #fff;
+             color: #000;
+             font-size: 16px;
+             border-radius: 5px;
+             -webkit-box-shadow: none;
+             box-shadow: none;
+             border: 1px solid rgba(0,0,0,.1);
+        }
+
+        .checkbox-wrap {
+            display: block;
+            position: relative;
+            margin-bottom: 12px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 500;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+
+            input {
+                margin-right: 10px;
+            }
+        }
+
+        a {
+            color: gray;
+            text-align: right;
+        }
+
+        .btn-signin {
+            background-color: #e73636;
+            color: #FFF;
+        }
+
+    }
+
+}
+
+.signup-suggestion {
+    text-align: center;
+    color: gray;
+    margin: 10px 0px;
+
+    a {
+        color: #000;
+        margin-left: 10px;
+        text-decoration: underline;
+
+        &:hover {
+            color: #333;
+        }
+    }
+}
