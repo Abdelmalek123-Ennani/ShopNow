@@ -5,6 +5,17 @@ $bg-color : #FFF;
     height: calc(100vh - 72px);
     background-color: $bg-color;
 
+
+    @media (max-width : 770px) {
+        &{
+            height: auto
+        };
+
+        .carousel-img  {
+            min-height: 400px;
+        }
+    }
+
     h1 {
         font-family: 'Akaya Telivigala', cursive;
         font-weight: 800;

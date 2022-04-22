@@ -22,6 +22,7 @@ function FilterCategories() {
           });
     } , [category])
 
+
   return (
     <div className='container-fluid my-2'>
         <div className="container mb-3">
@@ -59,7 +60,7 @@ function FilterCategories() {
                        <div className="col-12 col-md-3 product-item mb-4 p-1">
                          <Link className='product-link' to={`/product/${item.id}/Card`}>
                                     <div className='col-12 d-flex border border-bottom-0 justify-content-center align-items-center p-4 pb-0 h-85'>
-                                        <img src={item.image} alt="productImahe" className="w-100" />
+                                        <img src={item.image} alt="productImahe" className="w-75 w-md-100" />
                                     </div>
                                     <div className='p-1 m-0 product-details border border-top-0'>
                                         <h6>{item.category}</h6>

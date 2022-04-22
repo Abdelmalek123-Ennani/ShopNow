@@ -41,7 +41,7 @@ const CardItems = () => {
   return cardItems.length == 0 ? (
       <EmptyCard />
   ) : (
-    <div className='container-fluid'>
+    <div className='container'>
         <div className='row'>
             <div className="col-12 col-md-8">
             <h4>Your Visit made our day</h4>
@@ -124,7 +124,7 @@ const CardItems = () => {
                         <h3>Grand Total:</h3>
                     </div>
                     <div class="col-6 col-sm-4">
-                        <h5 className='p-0'>&#36;{ totalPrice }</h5>
+                        <h5 className='p-0'>&#36;{ totalPrice.toFixed(2) }</h5>
                     </div>
                 </div>
                 <div class="row mb-2">
