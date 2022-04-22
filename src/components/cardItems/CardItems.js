@@ -77,7 +77,7 @@ const CardItems = () => {
                                         <button className='btn btn-danger'
                                         onClick={() => removeItemFromCard(item.id)}
                                         >
-                                            Remove from card 
+                                            Remove from cart 
                                             {/* <FontAwesomeIcon icon={faTrashCan} className="text-white px-2" /> */}
                                         </button>
                                     </p>
@@ -88,47 +88,47 @@ const CardItems = () => {
                     ))}
             </div>
             <div className='col-12 col-md-4 checkout-form-shop pt-4'>
-            <div class="container-fluid">
-    <div class="row justify-content-center">
-        <div class="card my-4 p-3">
-            <div class="row main">
-                <div class="col-12"><span>Cart</span>&nbsp;&nbsp;&nbsp;&nbsp;<span>Shipping confirmation</span>&nbsp;&nbsp;&nbsp;&nbsp;<span>Credit card checkout</span></div>
+            <div className="container-fluid">
+    <div className="row justify-content-center">
+        <div className="card my-4 p-3">
+            <div className="row main">
+                <div className="col-12"><span>Cart</span>&nbsp;&nbsp;&nbsp;&nbsp;<span>Shipping confirmation</span>&nbsp;&nbsp;&nbsp;&nbsp;<span>Credit card checkout</span></div>
             </div>
-            <div class="row justify-content-center mrow">
-                <div class="col-12"> <img src="https://img.icons8.com/color/48/000000/mastercard-logo.png" width="35px" height="35px" /> <img src="https://img.icons8.com/color/48/000000/visa.png" width="35px" height="35px" /> <img src="https://img.icons8.com/color/48/000000/paypal.png" width="35px" height="35px" /> </div>
+            <div className="row justify-content-center mrow">
+                <div className="col-12"> <img src="https://img.icons8.com/color/48/000000/mastercard-logo.png" width="35px" height="35px" /> <img src="https://img.icons8.com/color/48/000000/visa.png" width="35px" height="35px" /> <img src="https://img.icons8.com/color/48/000000/paypal.png" width="35px" height="35px" /> </div>
             </div>
-            <form class="form-card">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="form-group"> <input type="text" class="form-control p-0" id="number" required /><label class="form-control-placeholder p-0" for="number">CardNumber</label> </div>
+            <form className="form-card">
+                <div className="row">
+                    <div className="col-12">
+                        <div className="form-group"> <input type="text" className="form-control p-0" id="number" required /><label className="form-control-placeholder p-0" for="number">CardNumber</label> </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-12">
-                        <div class="form-group"> <input type="text" class="form-control p-0" id="name" required /><label class="form-control-placeholder p-0" for="name">Cardholder'sName</label> </div>
+                <div className="row">
+                    <div className="col-12">
+                        <div className="form-group"> <input type="text" className="form-control p-0" id="name" required /><label className="form-control-placeholder p-0" for="name">Cardholder'sName</label> </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-sm-4 col-12">
-                        <div class="form-group"> <input type="text" class="form-control p-0" id="sdate" required /><label class="form-control-placeholder p-0" for="sdate">StartDate</label> </div>
+                <div className="row">
+                    <div className="col-sm-4 col-12">
+                        <div className="form-group"> <input type="text" className="form-control p-0" id="sdate" required /><label className="form-control-placeholder p-0" for="sdate">StartDate</label> </div>
                     </div>
-                    <div class="col-sm-4 col-12">
-                        <div class="form-group"> <input type="text" class="form-control p-0" id="expdate" required /><label class="form-control-placeholder p-0" for="expdate">ExpirationDate</label> </div>
+                    <div className="col-sm-4 col-12">
+                        <div className="form-group"> <input type="text" className="form-control p-0" id="expdate" required /><label className="form-control-placeholder p-0" for="expdate">ExpirationDate</label> </div>
                     </div>
-                    <div class="col-sm-4 col-12">
-                        <div class="form-group"> <input type="password" class="form-control p-0" id="passw" required /><label class="form-control-placeholder p-0" for="passw">CVV</label> </div>
+                    <div className="col-sm-4 col-12">
+                        <div className="form-group"> <input type="password" className="form-control p-0" id="passw" required /><label className="form-control-placeholder p-0" for="passw">CVV</label> </div>
                     </div>
                 </div>
-                <div class="row lrow mt-4 mb-3">
-                    <div class="col-6 col-sm-8">
+                <div className="row lrow mt-4 mb-3">
+                    <div className="col-6 col-sm-8">
                         <h3>Grand Total:</h3>
                     </div>
-                    <div class="col-6 col-sm-4">
+                    <div className="col-6 col-sm-4">
                         <h5 className='p-0'>&#36;{ totalPrice.toFixed(2) }</h5>
                     </div>
                 </div>
-                <div class="row mb-2">
-                    <div class="col-sm-12"> <button type="button" class="btn w-100 text-center">Pay</button> </div>
+                <div className="row mb-2">
+                    <div className="col-sm-12"> <button type="button" className="btn w-100 text-center">Pay</button> </div>
                 </div>
             </form>
         </div>

@@ -26,7 +26,7 @@ const Footer = () => {
                          </ul>
                      </div>
                      <div className="col-md-6 item text">
-                         <h3>FakeStore</h3>
+                         <h3>ShopNow</h3>
                          <p>Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac sem lacus. Ut vehicula rhoncus elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit pulvinar dictum vel in justo.</p>
                      </div>
                      <div className="col item social">

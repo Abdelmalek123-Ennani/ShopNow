@@ -26,7 +26,7 @@ const Header = () => {
                     <NavLink 
                       to="/"
                       className="header-link"
-                    >FakeShop</NavLink> 
+                    >ShopNow</NavLink> 
                 </li>
                 <ul className={classShowHideHeader}>
                     <li>

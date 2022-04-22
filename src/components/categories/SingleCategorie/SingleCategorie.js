@@ -27,7 +27,7 @@ const SingleCategorie = ({ category }) => {
                                 <Link className='product-link' to={`/product/${el.id}/Card`}>
                                       <img src={el.image} className="w-100 h-100" alt="image" />
                                       <button className='btn btn-like'>
-                                          <FontAwesomeIcon icon={faHeart} />
+                                          <FontAwesomeIcon onClick={e => e.stopPropagation()} icon={faHeart} />
                                       </button>
                                       <p className="price">{ el.price } $</p>
                                       <p className='decription'>{el.title.substring(0 , 25)}</p>

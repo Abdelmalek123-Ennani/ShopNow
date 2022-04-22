@@ -2,7 +2,7 @@
 
 import React , {useEffect} from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebook , faInstagram , faTwitter } from '@fortawesome/free-brands-svg-icons'
+import { faLinkedin , faInstagram , faTwitter } from '@fortawesome/free-brands-svg-icons'
 import "./login.scss"
 import { Slide } from "react-reveal"
 
@@ -32,10 +32,10 @@ const Login = () => {
                                 </div>
                                 <div className='w-100'>
                                     <p className='social-media d-flex justify-content-end'>
-                                        <a href="#" className="social-icon facebook d-flex align-items-center justify-content-center">
-                                            <FontAwesomeIcon icon={faFacebook} />
+                                        <a href="https://www.linkedin.com/in/abdelmalek-ennani-5304411b1/" className="social-icon linkedin d-flex align-items-center justify-content-center">
+                                            <FontAwesomeIcon icon={faLinkedin} />
                                         </a>
-                                        <a href="#" className="social-icon twitter d-flex align-items-center justify-content-center">
+                                        <a href="https://twitter.com/09_abdelmalek" className="social-icon twitter d-flex align-items-center justify-content-center">
                                             <FontAwesomeIcon icon={faTwitter} />
                                         </a>
                                         <a href="#" className="social-icon instagram d-flex align-items-center justify-content-center">

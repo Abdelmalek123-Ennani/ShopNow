@@ -60,7 +60,7 @@ const AddProductToCard = () => {
                       <p className="qnity_control">
                           <button 
                             className="btn btn-minus"
-                            onClick={() => quanity == 0 ? setQuanity(0) : setQuanity(quanity - 1)}
+                            onClick={() => quanity <= 1 ? setQuanity(1) : setQuanity(quanity - 1)}
                           >-</button>
                           <span className="qnty">{ quanity }</span>
                           <button 
